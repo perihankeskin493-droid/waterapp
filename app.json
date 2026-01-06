@@ -1,0 +1,92 @@
+{
+  "expo": {
+    "name": "Water Su Hatirlatici",
+    "slug": "water-su-hatirlatici",
+    "version": "1.0.2",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1A237E"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.gmail.perihankeskin493.watersu",
+      "buildNumber": "1.0.2",
+      "infoPlist": {
+        "NSUserNotificationUsageDescription": "Su içme hatırlatmaları için bildirim izni gerekli.",
+        "NSUserNotificationAlertStyle": "banner"
+      }
+    },
+    "android": {
+      "package": "com.gmail.perihankeskin493.watersu",
+      "versionCode": 2,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#1A237E"
+      },
+      "permissions": [
+        "RECEIVE_BOOT_COMPLETED",
+        "VIBRATE",
+        "android.permission.POST_NOTIFICATIONS"
+      ],
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "data": [
+            {
+              "scheme": "watersuhatirlatici"
+            }
+          ],
+          "category": ["BROWSABLE", "DEFAULT"]
+        }
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "color": "#1A237E"
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 34,
+            "targetSdkVersion": 34,
+            "minSdkVersion": 23,
+            "buildToolsVersion": "34.0.0"
+          },
+          "ios": {
+            "deploymentTarget": "13.4"
+          }
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "003f8799-dce1-4d73-b5bd-b0452c45b523"
+      }
+    },
+    "owner": "sevgilimai",
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/003f8799-dce1-4d73-b5bd-b0452c45b523"
+    },
+    "androidNavigationBar": {
+      "visible": "immersive",
+      "backgroundColor": "#1A237E"
+    }
+  }
+}
